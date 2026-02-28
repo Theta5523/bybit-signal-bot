@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: bybit-signal-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BYBIT_API_KEY
+        value: 0V5d4SOTAbvXFFBPWD
+      - key: BYBIT_API_SECRET
+        value: yZ68gRIMvPZgOla45McNPezcw8F6qHqSpZmn
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8224822732:AAF1bqAhTmfaQ_bfTvA4epHuGRmjU8KbIKI
+      - key: TELEGRAM_CHANNEL_ID
+        value: 6666502204
